@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <meta name="description" content="在下雨送给北京邮电大学高杏的 1024 程序员节礼物。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23171918'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='28' fill='%23f5f5f1'%3E1%3C/text%3E%3C/svg%3E" />
+    <title>1024 · 致高杏｜在下雨</title>
+    <script>
+      window.__isDesktop = window.innerWidth >= 1024 && !/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+      document.documentElement.classList.add(window.__isDesktop ? "is-desktop" : "is-mobile");
+    </script>
+  </head>
+  <body>
+    <main id="mobile-gate" aria-label="请使用电脑打开">
+      <div class="mobile-orbit" aria-hidden="true"><span></span></div>
+      <p class="eyebrow">A DESKTOP-ONLY FILM</p>
+      <h1>这份礼物，需要在<br />更大的银幕上打开。</h1>
+      <p class="mobile-copy">请使用电脑访问，窗口宽度需不少于 1024 像素。</p>
+      <div class="mobile-rule"></div>
+      <p class="mobile-signature">A FILM BY <strong>在下雨</strong></p>
+    </main>
+
+    <div id="desktop-app">
+      <section id="film" aria-label="1024 电影式礼物开场">
+        <canvas id="scene" aria-hidden="true"></canvas>
+        <canvas id="rain" aria-hidden="true"></canvas>
+        <div class="film-glow" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="letterbox letterbox-top" aria-hidden="true"></div>
+        <div class="letterbox letterbox-bottom" aria-hidden="true"></div>
+
+        <header class="film-header">
+          <div class="film-brand"><span class="brand-mark"></span>在下雨 <span>/ PRESENTS</span></div>
+          <div class="film-meta">DESKTOP PREMIERE&nbsp;&nbsp;·&nbsp;&nbsp;1024</div>
+        </header>
+
+        <div id="opening-credit" class="opening-credit">
+          <span>A FILM BY</span>
+          <strong>在下雨</strong>
+        </div>
+
+        <div id="dedication" class="dedication">
+          <span>致北京邮电大学</span>
+          <strong>高杏</strong>
+        </div>
+
+        <div id="invitation" class="invitation">
+          <p class="chapter-kicker">THE PROGRAMMER'S DAY · 1024</p>
+          <h1>有些礼物，<br />值得被运行。</h1>
+          <p class="invitation-sub">一份送给高杏的模型礼物</p>
+          <button id="start-film" class="start-button" type="button">
+            <span class="play-icon" aria-hidden="true"></span>
+            开启影片与礼物
+          </button>
+          <p class="sound-note">建议开启声音 · 全片约 12 秒</p>
+        </div>
+
+        <div id="chapter-caption" class="chapter-caption" aria-live="polite">
+          <span id="chapter-number">01 / 04</span>
+          <p id="chapter-title">雨落下的时候，故事开始。</p>
+        </div>
+
+        <button id="skip-film" class="skip-button" type="button">跳过影片 <span>↗</span></button>
+        <div class="film-counter"><span>1024</span><small>FOR GAO XING · BUPT</small></div>
+        <div id="whiteout" class="whiteout" aria-hidden="true"></div>
+      </section>
+
+      <section id="gift" class="gift" aria-label="送给高杏的阿里云百炼礼物">
+        <header class="gift-nav">
+          <a class="gift-brand" href="#" aria-label="1024 首页"><span class="gift-brand-mark">1</span><span>1024</span><i></i><span>GAO XING</span></a>
+          <div class="gift-nav-right">
+            <span class="gift-status"><i></i>礼物已送达</span>
+            <button id="sound-toggle" class="icon-button" type="button" aria-label="关闭声音" title="声音开关">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6.5 9H3v6h3.5l4.5 4V5Zm4 4a4 4 0 0 1 0 6m2.5-8.5a8 8 0 0 1 0 11" /></svg>
+            </button>
+            <button id="replay" class="text-button" type="button">重看影片 ↗</button>
+          </div>
+        </header>
+
+        <div class="gift-layout">
+          <div class="gift-story">
+            <p class="gift-eyebrow"><span></span> HAPPY PROGRAMMER'S DAY</p>
+            <h1>高杏，<br /><span>1024</span> 快乐。</h1>
+            <p class="gift-lead">愿你在北京邮电大学，<br />写出值得被世界运行的代码。</p>
+            <p class="gift-note">这份礼物不是纪念图片。<br />拿去创造点什么吧。</p>
+            <div class="signature"><span>designed & directed by</span><strong>在下雨</strong></div>
+          </div>
+
+          <div class="gift-access-wrap">
+            <div class="access-orbit" aria-hidden="true"></div>
+            <article class="access-card">
+              <div class="access-card-top">
+                <div><span class="access-label">MODEL ACCESS</span><h2>阿里云百炼</h2></div>
+                <div class="gift-number">GIFT<br /><strong>001</strong></div>
+              </div>
+              <div class="access-chip-row">
+                <div class="chip" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                <span>BUPT · 1024 · GAO XING</span>
+              </div>
+
+              <div class="access-field">
+                <div class="field-heading"><label for="endpoint">API 使用地址</label><span>OPENAI COMPATIBLE</span></div>
+                <div class="field-control endpoint-control">
+                  <input id="endpoint" readonly aria-label="API 使用地址" />
+                  <button class="copy-button" data-copy="endpoint" type="button" aria-label="复制 API 使用地址">复制</button>
+                </div>
+              </div>
+
+              <div class="access-field model-field">
+                <div class="field-heading"><label for="model">选择模型</label><span>MODEL ID</span></div>
+                <div class="select-wrap"><select id="model" aria-label="选择模型"></select><span>⌄</span></div>
+              </div>
+
+              <div class="access-field">
+                <div class="field-heading"><label for="api-key">API Key</label><span id="key-state">等待密钥</span></div>
+                <div class="field-control">
+                  <input id="api-key" type="password" readonly aria-label="API Key" />
+                  <button id="reveal-key" class="reveal-button" type="button" aria-label="显示 API Key">显示</button>
+                  <button class="copy-button" data-copy="api-key" type="button" aria-label="复制 API Key">复制</button>
+                </div>
+              </div>
+
+              <div class="access-footer">
+                <span><i></i> READY TO BUILD</span>
+                <button id="copy-all" type="button">复制全部配置 <span>↗</span></button>
+              </div>
+            </article>
+            <p class="security-note">密钥仅作为礼物信息展示。公开部署前，请接入私密交付方式。</p>
+          </div>
+        </div>
+
+        <footer class="gift-footer"><span>FOR GAO XING · BEIJING UNIVERSITY OF POSTS AND TELECOMMUNICATIONS</span><span>© 2026 在下雨</span></div>
+      </section>
+      <div id="toast" class="toast" role="status" aria-live="polite">已复制，可以开始构建了。</div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
